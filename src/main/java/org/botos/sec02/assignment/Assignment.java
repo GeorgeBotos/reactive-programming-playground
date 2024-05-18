@@ -1,4 +1,4 @@
-package org.botos.assignment;
+package org.botos.sec02.assignment;
 
 import static org.botos.common.Util.subscriber;
 

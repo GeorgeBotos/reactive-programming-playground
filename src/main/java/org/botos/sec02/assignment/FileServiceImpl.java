@@ -1,4 +1,4 @@
-package org.botos.assignment;
+package org.botos.sec02.assignment;
 
 import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Mono;
