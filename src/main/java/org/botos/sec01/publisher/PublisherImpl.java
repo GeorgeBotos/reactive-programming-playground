@@ -1,7 +1,6 @@
 package org.botos.sec01.publisher;
 
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import org.reactivestreams.Publisher;
 import org.reactivestreams.Subscriber;
 

@@ -2,8 +2,8 @@ package org.botos.sec03;
 
 import reactor.core.publisher.Flux;
 
-import static org.botos.common.Util.subscriber;
 import static org.botos.common.Util.faker;
+import static org.botos.common.Util.subscriber;
 
 public class FluxRange {
 
