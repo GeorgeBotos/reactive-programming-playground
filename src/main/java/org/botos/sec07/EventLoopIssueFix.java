@@ -2,7 +2,6 @@ package org.botos.sec07;
 
 import lombok.extern.slf4j.Slf4j;
 import org.botos.sec07.client.ExternalServiceClient;
-import reactor.core.scheduler.Schedulers;
 
 import static org.botos.common.Util.sleep;
 import static org.botos.common.Util.subscriber;
