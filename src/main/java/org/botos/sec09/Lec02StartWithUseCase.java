@@ -4,7 +4,7 @@ import org.botos.sec09.helper.NameGenerator;
 
 import static org.botos.common.Util.subscriber;
 
-public class StartWithUseCase {
+public class Lec02StartWithUseCase {
 
 	public static void main(String[] args) {
 

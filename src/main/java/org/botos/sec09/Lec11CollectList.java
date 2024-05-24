@@ -1,11 +1,10 @@
 package org.botos.sec09;
 
 import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
 
 import static org.botos.common.Util.subscriber;
 
-public class CollectList {
+public class Lec11CollectList {
 
 	public static void main(String[] args) {
 

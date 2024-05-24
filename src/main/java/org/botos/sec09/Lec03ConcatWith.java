@@ -9,25 +9,32 @@ import static org.botos.common.Util.sleep;
 import static org.botos.common.Util.subscriber;
 
 @Slf4j
-public class ConcatError {
+public class Lec03ConcatWith {
 
 	public static void main(String[] args) {
 
-		demo2();
+//		demo1();
+//		demo2();
+		demo3();
 
 		sleep(3);
 	}
 
 	private static void demo1() {
-		producer1().concatWith(producer3())
-		           .concatWith(producer2())
+		producer1().concatWithValues(-1, 0)
 		           .subscribe(subscriber());
 	}
 
 	private static void demo2() {
-		Flux.concatDelayError(producer1(), producer3(), producer2())
+		producer1().concatWith(producer2())
+		           .subscribe(subscriber());
+	}
+
+	private static void demo3() {
+		Flux.concat(producer1(), producer2())
 		    .subscribe(subscriber());
 	}
+
 
 	private static Flux<Integer> producer1() {
 		return Flux.just(1, 2, 3)
@@ -39,9 +46,5 @@ public class ConcatError {
 		return Flux.just(51, 52, 53)
 		           .doOnSubscribe(item -> log.info("subscribing to producer 2"))
 		           .delayElements(Duration.ofMillis(10));
-	}
-
-	private static Flux<Integer> producer3() {
-		return Flux.error(new RuntimeException("oops"));
 	}
 }

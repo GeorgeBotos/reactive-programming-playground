@@ -7,7 +7,7 @@ import java.time.Duration;
 import static org.botos.common.Util.sleep;
 import static org.botos.common.Util.subscriber;
 
-public class Zip {
+public class Lec07Zip {
 
 	private record Car(String body, String engine, String wheels) {
 	}

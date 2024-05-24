@@ -11,7 +11,7 @@ import static org.botos.common.Util.sleep;
 import static org.botos.common.Util.subscriber;
 
 @Slf4j
-public class Then {
+public class Lec12Then {
 
 	public static void main(String[] args) {
 

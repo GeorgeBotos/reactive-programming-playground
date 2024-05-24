@@ -1,17 +1,19 @@
 package org.botos.sec09;
 
-import org.botos.sec09.applications.PaymentService;
+import org.botos.sec09.applications.OrderService;
 import org.botos.sec09.applications.UserService;
 
+import static org.botos.common.Util.sleep;
 import static org.botos.common.Util.subscriber;
 
-public class MonoFlatMap {
+public class Lec09MonoFlatMapMany {
 
 	public static void main(String[] args) {
 
-		// We have username. => Get user account balance.
 		UserService.getUserId("mike")
-		           .flatMap(PaymentService::getUserBalance)
+		           .flatMapMany(OrderService::getUserOrders)
 		           .subscribe(subscriber());
+
+		sleep(2);
 	}
 }
