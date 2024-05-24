@@ -9,7 +9,9 @@ import static org.botos.common.Util.subscriber;
 
 public class Lec07Zip {
 
-	private record Car(String body, String engine, String wheels) {
+	private record Car(String body,
+	                   String engine,
+	                   String wheels) {
 	}
 
 	public static void main(String[] args) {
