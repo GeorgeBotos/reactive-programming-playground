@@ -2,8 +2,6 @@ package org.botos.sec04;
 
 import reactor.core.publisher.Flux;
 
-import java.util.stream.IntStream;
-
 import static org.botos.common.Util.subscriber;
 
 public class TakeOperator {

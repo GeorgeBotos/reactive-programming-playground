@@ -2,8 +2,6 @@ package org.botos.sec05.assignment;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.time.Duration;
-
 import static org.botos.common.Util.sleep;
 import static org.botos.common.Util.subscriber;
 

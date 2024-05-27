@@ -2,9 +2,6 @@ package org.botos.sec06;
 
 import lombok.extern.slf4j.Slf4j;
 import org.botos.sec06.util.Movie;
-import reactor.core.publisher.Flux;
-
-import java.time.Duration;
 
 import static org.botos.common.Util.sleep;
 import static org.botos.common.Util.subscriber;

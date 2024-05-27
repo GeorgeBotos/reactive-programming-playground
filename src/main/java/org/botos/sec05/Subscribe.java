@@ -3,8 +3,6 @@ package org.botos.sec05;
 import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Flux;
 
-import static org.botos.common.Util.subscriber;
-
 @Slf4j
 public class Subscribe {
 
